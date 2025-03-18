@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+
+.listsp { width: 100%; color: red; }
+.listsp h2 { background-color: darkcyan; color: white; padding: 10px; }
+.listsp #data { display: grid; grid-template-columns: 33.3% 33.3% 33.3%; }
+.listsp #data .sp { border: 1px solid #ccc; margin: 10px; text-align: center; }
+.listsp #data .sp h4 { margin: 10px; height: 50px; }
+.listsp #data .sp h4 a { text-decoration: none; font-size: 1.1em; }
+.listsp #data .sp p { font-size: 1.2em; color: darkblue; font-weight: 600; margin: 10px; }
+.listsp #data .sp img { width: 100%; height: 250px; border: 1px solid black; }
+#main {
+    display: flex;
+    flex-direction: column; /* Hiển thị theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa hai danh sách */
+}
+#chitietsp h2 {
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#chitietsp #data {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    gap: 20px;
+    font-size: 1.3em;
+}
+
+#chitietsp #data #left img {
+    width: 100%;
+    height: 280px;
+    border: 1px solid black;
+}
+

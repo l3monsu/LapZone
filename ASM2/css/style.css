@@ -1,0 +1,110 @@
+* { box-sizing: border-box; }
+
+.listsp { width: 100%; color: red; }
+.listsp h2 { background-color: darkcyan; color: white; padding: 10px; }
+.listsp #data { display: grid; grid-template-columns: 33.3% 33.3% 33.3%; }
+.listsp #data .sp { border: 1px solid #ccc; margin: 10px; text-align: center; }
+.listsp #data .sp h4 { margin: 10px; height: 50px; }
+.listsp #data .sp h4 a { text-decoration: none; font-size: 1.1em; }
+.listsp #data .sp p { font-size: 1.2em; color: darkblue; font-weight: 600; margin: 10px; }
+.listsp #data .sp img { width: 100%; height: 250px; border: 1px solid black; }
+#main {
+    display: flex;
+    flex-direction: column; /* Hiển thị theo chiều dọc */
+    gap: 20px; /* Khoảng cách giữa hai danh sách */
+}
+#chitietsp h2 {
+    background-color: darkcyan;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#chitietsp #data {
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    gap: 20px;
+    font-size: 1.3em;
+}
+
+#chitietsp #data #left img {
+    width: 100%;
+    height: 280px;
+    border: 1px solid black;
+}
+#listnhasx {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+h2 a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+h2 a:hover {
+    background-color: #0056b3;
+}
+
+#data {
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* admin nha sx*/
+/* Định dạng dòng tiêu đề */
+.nsx {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+/* Định dạng cột trong tiêu đề và dữ liệu */
+.nsx b,
+.nsx span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Định dạng từng dòng dữ liệu */
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Định dạng các cột của dữ liệu */
+.data-row span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Định dạng hàng cuối cùng */
+.data-row:last-child {
+    border-bottom: none;
+}
+
+
